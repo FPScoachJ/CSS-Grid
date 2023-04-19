@@ -1,0 +1,68 @@
+.grid-container {
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav ucLeft ucCenter ucRight"
+    "nav middleContent middleContent middleContent"
+    "nav lowerContent lowerContent lowerContent"
+    "footer footer footer footer";
+  gap: 2px;
+}
+
+.header {
+  grid-area: header;
+  border: 2px solid black;
+  height: 50px;
+  background-color: lightgray;
+}
+
+.nav {
+  grid-area: nav;
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  background-color: tan;
+}
+.ucLeft {
+  grid-area: ucLeft;
+  border: 2px solid black;
+  height: 100px;
+  width: 1fr;
+  background-color: darkgray;
+}
+.ucCenter {
+  grid-area: ucCenter;
+  border: 2px solid black;
+  height: 100px;
+  width: 2fr;
+  background-color: orangered;
+}
+.ucRight {
+  grid-area: ucRight;
+  border: 2px solid black;
+  height: 100px;
+  width: 1fr;
+  background-color: lightgray;
+}
+.middleContent {
+  grid-area: middleContent;
+  border: 2px solid black;
+  height: 70px;
+  background-color: lightblue;
+}
+.lowerContent {
+  grid-area: lowerContent;
+  border: 2px solid black;
+  height: 90px;
+  background-color: orange;
+}
+.footer {
+  grid-area: footer;
+  border: 2px solid black;
+  height: 50px;
+  background-color: lightgray;
+}
+div {
+  text-align: center;
+}
